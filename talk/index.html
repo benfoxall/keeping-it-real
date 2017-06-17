@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Keeping it real with web</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="lib/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="lib/reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="lib/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Keeping it real</h1>
+          <h2>with web</h2>
+        </section>
+      </div>
+    </div>
+
+
+    <script src="lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="lib/reveal.js/js/reveal.js"></script>
+    <script>
+
+      Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+        margin: 0,
+
+        transition: 'slide',
+
+        dependencies: [
+          {
+            src: 'lib/reveal.js/plugin/highlight/highlight.js',
+            async: true,
+            callback: function() { hljs.initHighlightingOnLoad() }
+          }
+        ]
+      })
+
+    </script>
+
+  </body>
+</html>
