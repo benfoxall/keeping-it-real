@@ -16,3 +16,13 @@ Topics include:
 
 * http://www.arts.rpi.edu/~ruiz/stereo_history/text/historystereog.html
 * https://en.wikipedia.org/wiki/Stereoscope
+
+
+## Resources
+
+* Places called Oxford - http://uk.geotargit.com/called.php?qcity=Oxford&all=all&part=exact
+* timbl - http://www.timbernersleeandfriends.com/media/channels
+* queen victoria - By Alexander Bassano - Scanned from the book The National Portrait Gallery History of the Kings and Queens of England by David Williamson, ISBN 1855142287, p. 153., Public Domain, https://commons.wikimedia.org/w/index.php?curid=6640482
+* brewster stereoscope - https://commons.wikimedia.org/wiki/File:IGB_006055_Visore_stereoscopico_portatile_Museo_scienza_e_tecnologia_Milano.jpg
+* modem sounds - https://www.youtube.com/watch?v=gsNaR6FRuO0
+* great exhibition 1851 - By J. McNeven - collections.vam.ac.uk, Public Domain, https://commons.wikimedia.org/w/index.php?curid=543328
