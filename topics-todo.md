@@ -3,6 +3,10 @@ Overall goals:
 * As a web developer - you're in a great place to make use of VR
 * this is going to be as boring as possible
 
+Themes:
+
+* Innovation is important, but accessible is next and important
+
 Overall Structure:
 
 * What features make this work
