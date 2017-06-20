@@ -35,3 +35,15 @@ Boring use cases: training,
 Notable examples:
 
 * matterport https://my.matterport.com/vr/show/?m=VvXTcv9iZE2
+
+
+Line mode browser - brought the web to the masses
+Google cardboard - brought VR to the masses
+Content - needs to be brought to the masses
+
+
+---
+
+# TODO
+
+* [ ] check if Samsung Internet supports Cardboard

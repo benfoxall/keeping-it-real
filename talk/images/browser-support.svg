@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="720px" viewBox="0 0 1280 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>browser-support</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Intro-/-Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="browser-support">
+            <text id="OCULUS" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="23" y="469">OCULUS</tspan>
+            </text>
+            <text id="CARDBOARD" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="23" y="206">CARDBOARD</tspan>
+            </text>
+            <text id="FIREFOX" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="738" y="100">FIREFOX</tspan>
+            </text>
+            <text id="CHROME" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="1099" y="100">CHROME</tspan>
+            </text>
+            <text id="SAMSUNG-INTERNET" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="490" y="82">SAMSUNG</tspan>
+                <tspan x="490" y="117">INTERNET</tspan>
+            </text>
+            <text id="IE" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="961" y="100">IE</tspan>
+            </text>
+            <text id="CHROME-ANDROID" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="256" y="82">CHROME</tspan>
+                <tspan x="256" y="117">ANDROID</tspan>
+            </text>
+            <g id="yup" transform="translate(535.000000, 332.000000)" fill="#5CFFE2">
+                <circle id="Oval-3" cx="22" cy="22" r="22"></circle>
+            </g>
+            <g id="yup" transform="translate(295.000000, 257.000000)" fill="#5CFFE2">
+                <circle id="Oval-3" cx="22" cy="22" r="22"></circle>
+            </g>
+            <g id="yup" transform="translate(295.000000, 182.000000)" fill="#5CFFE2">
+                <circle id="Oval-3" cx="22" cy="22" r="22"></circle>
+            </g>
+            <g id="kinda" transform="translate(782.000000, 450.000000)" fill="#FFA45C">
+                <circle id="Oval-3" cx="11" cy="11" r="11"></circle>
+            </g>
+            <g id="kinda" transform="translate(782.000000, 535.000000)" fill="#FFA45C">
+                <circle id="Oval-3" cx="11" cy="11" r="11"></circle>
+            </g>
+            <text id="DAYDREAM" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="23" y="294">DAYDREAM</tspan>
+            </text>
+            <text id="GEARVR" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="23" y="382">GEARVR</tspan>
+            </text>
+            <text id="VIVE" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="23" y="557">VIVE</tspan>
+            </text>
+            <text id="WINDOWSMR" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="23" y="645">WINDOWSMR</tspan>
+            </text>
+            <rect id="Rectangle-3" stroke="#EAEAEA" stroke-width="4" x="249" y="146" width="438" height="270"></rect>
+            <rect id="Rectangle-4" stroke="#EAEAEA" stroke-width="4" x="687" y="416" width="553" height="270"></rect>
+            <g id="yup" transform="translate(942.000000, 608.000000)" fill="#5CFFE2">
+                <circle id="Oval-3" cx="22" cy="22" r="22"></circle>
+            </g>
+            <g id="kinda" transform="translate(1145.000000, 456.000000)" fill="#FFA45C">
+                <circle id="Oval-3" cx="11" cy="11" r="11"></circle>
+            </g>
+            <g id="kinda" transform="translate(1145.000000, 535.000000)" fill="#FFA45C">
+                <circle id="Oval-3" cx="11" cy="11" r="11"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

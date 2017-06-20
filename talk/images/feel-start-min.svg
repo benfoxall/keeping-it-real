@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="720px" viewBox="0 0 1280 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>feel-start-min</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="How-it-feels" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="feel-start-min">
+            <g id="Browser-window" transform="translate(448.000000, 84.000000)">
+                <rect id="Rectangle" stroke="#EAEAEA" stroke-width="4" x="2" y="2" width="380" height="548"></rect>
+                <rect id="Rectangle-2" stroke="#EAEAEA" stroke-width="4" x="2" y="2" width="380" height="45"></rect>
+                <text id="https://foo.bar.com" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="19" y="35">https://foo.bar.com</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-3" stroke="#EAEAEA" stroke-width="4" x="533" y="336" width="215" height="48"></rect>
+            <text id="ENTER-VR" font-family="DINAlternate-Bold, DIN Alternate" font-size="30" font-weight="bold" fill="#FFFFFF">
+                <tspan x="575" y="371">ENTER VR</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

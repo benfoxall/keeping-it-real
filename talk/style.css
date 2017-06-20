@@ -22,3 +22,11 @@ hr {
   border: none;
   box-shadow: none;
 }
+
+
+.reveal .slides blockquote.to {
+  text-align: left;
+}
+.reveal .slides blockquote.from {
+  text-align: right;
+}

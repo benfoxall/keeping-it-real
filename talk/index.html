@@ -4,9 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-
     <title>Keeping it real with web</title>
-
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
@@ -25,7 +23,6 @@
           <h1>Keeping it real</h1>
           <h2>with web</h2>
         </section>
-
         <section>
           <section>
             <h1>Hi, I'm Ben</h1>
@@ -35,13 +32,11 @@
             <h3>Independent developer</h3>
             <h3>based in Oxford<span class="fragment">, UK</span></h3>
           </section>
-          <section data-background="images/oxfords.png" data-background-size="contain" ></section>
+          <section data-background="images/oxfords.png" data-background-size="cover" ></section>
           <section data-background="images/oxford-ca.png" data-background-size="contain" > </section>
           <section data-background="images/oxford-ca-zoom.png" data-background-size="contain" > </section>
           <section data-background="images/oxford-ca-satellite.png" data-background-size="contain" > </section>
-          <section>
-            <h2>The one that's not on fire</h2>
-          </section>
+          <section><h3>I'm from the one without the stuff on fire</h3></section>
 
           <section><h1>Stuff I do</h1></section>
           <section data-background="images/projects-1.jpg" data-background-size="cover" ></section>
@@ -54,10 +49,9 @@
         </section>
 
         <section>
-          <section>
-            <h1>Virtual Reality &amp; The Web</h1>
-            <h3 class="fragment">(WebVR)</h3>
-          </section>
+          <!-- <section>
+            <h1>Virtual Reality Experiences &amp; The Web with WebVR</h1>
+          </section> -->
           <section>
             <h4>Today</h4>
             <h2>VR, The Web &amp; WebVR</h2>
@@ -78,11 +72,21 @@
           <section data-background="images/overview-queen-victoria.jpg"></section>
           <section data-background="images/overview-crystal-palace.jpg"><!-- great exhibition 1851 --></section>
           <section>
+            <h2>Stereoscopic Viewers</h2>
+          </section>
+          <section>
             <img class="stretch" src="images/overview-brewster.png"/>
             <!-- This was hugely successful because Victoria was so respected by the masses -->
           </section>
           <section>
             <h3>[picture] vs [stereoscope]</h3>
+            <!--
+              As well as being 3d, there's a subtly important difference.
+
+              When you're looking through a device like this, you're re-experiencing the sensation of seeing that for yourself.
+
+              This is why it's harder to move in VR, if you were to switch scenes like in video, it'd be extremly jarring.
+            -->
             <!-- you don't have to have empathy with the photographer -->
           </section>
           <section>
@@ -106,7 +110,7 @@
             <!-- <h3>tango, phones?[todo]</h3> --><!-- Magic window -->
           </section>
           <section>
-            <h3>[Levels of VR rendering]</h3>
+            <h3>[Features] {move to device detection}</h3>
             <h4>Magic window</h4>
             <h4>Rendering square</h4>
             <h4>Rendering warp</h4>
@@ -119,40 +123,42 @@
           <section>
             <h1>The Web</h1>
           </section>
+          <section data-background="images/overview-timbl.jpg"></section>
           <section>
-            <h1>[Timbl]</h1>
-          </section>
-          <section>
-            <h2>Pillars of the web</h2>
-            <h1>URL</h1>
-            <h1>HTTP</h1>
-            <h1>HTML</h1>
+            <h2>The Web:</h2>
+            <h1><small>1/</small> URL</h1>
+            <h1><small>2/</small> HTTP</h1>
+            <h1><small>3/</small> HTML</h1>
             <!-- URL, an address system that keeps track of Web documents
             HTTP, a transport protocol to find documents when given their URLs
             HTML, a document format allowing for embedded hyperlinks -->
           </section>
+          <section data-background="images/overview-www.jpg"></section>
           <section>
-            <h1>Web Browsers</h1>
-            <h3>A presentation layer for the web</h3>
+            <h2>The Browser:</h2>
+            <h1>Presentation</h1>
           </section>
           <section>
-            <h2>1st WorldWideWeb</h2>
-            <h2 class="fragment">2nd Line Mode</h2>
-            <!--
-              WorldWideWeb, important - first ever web browser, implemented on NeXT
-              LineMode, MORE important - made web browsing accessible beyond NeXT
-            -->
+            <h2>WorldWideWeb<span class="fragment">, Line-Mode</span></h2>
           </section>
           <section>
-            <h3>(Nicola Pellow)</h3>
+            <h1>NeXT &raquo; C</h1>
+            <h1>GUI &raquo; CLI</h1>
           </section>
           <section>
-            <h3>[the core web - must stay solid]</h3>
-            <h3>[browsers - must move forward]</h3>
+            <h1>Nicola Pellow</h1>
           </section>
           <section>
-            <h3>Should a browser even support VR?</h3>
-            <h2><span class="fragment">Yes</span><span class="fragment">.</span> <span class="fragment">Absolutely.</span></h2>
+            <h2>Killer feature of every browser:</h2>
+            <h1 class="fragment">The next one</h1>
+          </section>
+
+          <!-- 1 - supporting a new system
+          2 - wider audience -->
+          <section>
+            <h1>VR?</h1>
+            <h3 class="fragment">Should a web browser have native VR support?</h3>
+            <h3><span class="fragment">Yes</span><span class="fragment">.</span> <span class="fragment">Absolutely.</span></h3>
           </section>
         </section>
 
@@ -169,33 +175,63 @@
             <h2>The Extensible Web Manifesto</h2>
           </section>
           <section>
-            <h1>WebVR 1.1</h1>
+            <h1>WebVR 1.0<span class="fragment">, 1.1</span><span class="fragment">, 2.0</span></h1>
+            <!-- <h1>WebVR 1.1</h1>
+            <h1>WebVR 2</h1> -->
+          </section>
+          <section>
+            <img class="stretch" src="images/browser-support.svg" />
+            <!--
+              This is slightly hard, because it's based on hardware
+            -->
           </section>
 
           <section>
-            <h1>How WebVR feels</h1>
-            <h4>for developers</h4>
-          </section>
-          <section>
-            <h2>Get connected displays</h2>
-            <h4>navigator.getVRDisplays()</h4>
-          </section>
-          <section>
+            <h2>What does WebVR let you do?</h2>
+
+            <h3>1/ Query available headsets</h3>
+            <h3>2/ Access a headset pose</h3>
+            <h3>3/ Show content on headset</h3>
+
+            <h4 style="margin-top:3em">&amp; handle related challenges
 
           </section>
-          <section>
-            <h2>Get display position</h2>
-            <h4>display.getFrameData(frameData)</h4>
-          </section>
-          <section>
-            <h2>Show content on display</h2>
-            <h4>display.requestPresent()</h4>
-          </section>
+
+          <!-- <section>
+            <h3>(&amp; some related challenges)</h3>
+            <h4>1/ Higher refresh rates</h4>
+            <h4>2/ Exposing device capabilities</h4>
+            <h4>3/ Handling various usage patterns</h4>
+          </section> -->
+
+
 
           <section>
-            <h1>How WebVR feels</h1>
-            <h4>for end users</h4>
+            <h1>Code</h1>
+            <pre><code data-trim data-noescape>
+              <span class="fragment">
+              // get a list of attached/supported displays
+              navigator.getVRDisplays()
+              </span>
+              <span class="fragment">
+              // access pose/position of headset
+              display.getFrameData(frameData)
+              </span>
+              <span class="fragment">
+              // present canvas on device
+              display.requestPresent([{source: GLCanvas}])
+              </span>
+            </code></pre>
           </section>
+
+        </section>
+
+
+        <section data-background="#fff">
+          <h1>How WebVR feels</h1>
+        </section>
+
+        <section>
           <section>
             <h3>[enter VR button on 3d content]</h3>
           </section>
@@ -211,8 +247,7 @@
         </section>
 
         <section data-background="#fff">
-          <h1>How WebVR fits</h1>
-          <h2>with the rest of the browser</h2>
+          <h1>WebVR &amp; Browser APIs</h2>
           <!-- WebVR isn't a magical self contained thing, a lot of technologies make it better -->
         </section>
 
@@ -229,14 +264,27 @@
             <h1>[WebGL]</h1>
           </section>
           <section>
-            <pre><code data-trim>
-              gl.viewport(0, 0, canvas.width * 0.5, canvas.height)
-              gl.uniformMatrix4fv(u_projection, false, frameData.leftProjectionMatrix)
-              gl.uniformMatrix4fv(u_view, false, frameData.leftViewMatrix)
-            </code></pre>
+            <h3><pre><code data-trim class="hljs javascript">
+              const fData = new VRFrameData()
+
+              display.getFrameData(fData)
+
+              // fData = {pose: […], position: […], etc}
+            </code></pre></h3>
           </section>
           <section>
-            <h3>device.requestAnimationFrame</h3>
+            <h3><pre><code data-trim class="hljs javascript">
+              gl.uniformMatrix4fv(u_projection, false,
+                fData.leftProjectionMatrix)
+
+              gl.uniformMatrix4fv(u_view, false,
+                fData.leftViewMatrix)
+            </code></pre></h3>
+          </section>
+          <section>
+            <h1><pre><code data-trim class="hljs javascript">
+              device.requestAnimationFrame()
+            </code></pre></h1>
           </section>
         </section>
 
@@ -289,7 +337,7 @@
         <section>
           <section>
             <h3>WebVR</h3>
-            <h1>+ WebRTC</h1>
+            <h1>++ WebRTC</h1>
           </section>
           <section>
             <h3>Peer to peer networking</h3>
