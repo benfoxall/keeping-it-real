@@ -12,48 +12,97 @@
 
         vertexBuffer = gl.createBuffer()
         gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer)
+
+        const h = Math.sqrt(1.25)/2
+
+        const A =  [0,   h,   0]
+        const B =  [-h, -h, -.5]
+        const C =  [0,  -h,  .5]
+        const D =  [h,  -h, -.5]
+        const C1 = [1,  .5,   0]
+        const C2 = [0,   1,  .5]
+        const C3 = [.5,  0,   1]
+        const C4 = [1,   0,  .5]
+
         var triangleVertices = [
-               0.0,  0.5,  0.0,
-              -0.5, -0.5,  0.0,
-               0.5, -0.5,  0.0
-        ]
+          // A,B,C, C1,C1,C1,
+          // A,D,B, C2,C2,C2,
+          // A,C,D, C3,C3,C3,
+          // B,D,C, C4,C4,C4
+
+          A,C1,  B,C1,  C,C1,
+          A,C2,  D,C2,  B,C2,
+          A,C3,  C,C3,  D,C3,
+          B,C4,  D,C4,  C,C4,
+
+        ].reduce((a,b) => a.concat(b), [])
+
+        // triangleVertices = [
+        //   0, 0.5, 0,
+        //   -.5, -.5, 0,
+        //     0.5, -0.5, 0
+        // ]
+
+        console.log(triangleVertices)
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(triangleVertices), gl.STATIC_DRAW)
         vertexBuffer.itemSize = 3
-        vertexBuffer.numberOfItems = 3
+        vertexBuffer.numberOfItems = triangleVertices.length/6
 
 
         const frag = gl.createShader(gl.FRAGMENT_SHADER)
         gl.shaderSource(frag, `
           precision mediump float;
+          varying vec3 v_color;
+
            void main() {
-             gl_FragColor = vec4(0.5, 1.0, 1.0, 1.0);
+             gl_FragColor = vec4(v_color, 1.0);
            }
         `)
         gl.compileShader(frag)
 
         const vert = gl.createShader(gl.VERTEX_SHADER)
         gl.shaderSource(vert, `
-          attribute vec3 aVertexPosition;
+          attribute vec3 a_position;
+          attribute vec3 a_color;
+          varying vec3 v_color;
+
+          uniform mat4 u_view;
+          uniform mat4 u_proj;
 
           void main() {
-            gl_Position = vec4(aVertexPosition, 1.0);
+            v_color = a_color;//vec3(0.0,1.0,0.0);
+            gl_Position = vec4(a_position, 1.0) * u_view * u_proj;
           }
         `)
         gl.compileShader(vert)
 
-        shaderProgram = gl.createProgram()
-        gl.attachShader(shaderProgram, vert)
-        gl.attachShader(shaderProgram, frag)
-        gl.linkProgram(shaderProgram)
+        const program = gl.createProgram()
+        gl.attachShader(program, vert)
+        gl.attachShader(program, frag)
+        gl.linkProgram(program)
 
+        const a_position = gl.getAttribLocation(program, 'a_position')
+        const a_color = gl.getAttribLocation(program, 'a_color')
+        const u_view = gl.getUniformLocation(program, 'u_view')
+        const u_proj = gl.getUniformLocation(program, 'u_proj')
+
+        window.p = program
 
         return (view, projection, bounds) => {
-          gl.useProgram(shaderProgram)
+          gl.useProgram(program)
 
-          gl.vertexAttribPointer(shaderProgram.vertexPositionAttribute,
-                         vertexBuffer.itemSize, gl.FLOAT, false, 0, 0)
-         gl.enableVertexAttribArray(shaderProgram.vertexPositionAttribute)
-         gl.drawArrays(gl.TRIANGLES, 0, vertexBuffer.numberOfItems)
+          if(view) gl.uniformMatrix4fv(u_view, false, view)
+          if(projection) gl.uniformMatrix4fv(u_proj, false, view)
+
+          if(bounds) {
+            gl.viewport(bounds.x, bounds.y, bounds.w, bounds.h)
+          }
+
+          gl.vertexAttribPointer(a_position, 3, gl.FLOAT, false, 4*6, 0)
+          gl.enableVertexAttribArray(a_position)
+          gl.vertexAttribPointer(a_color, 3, gl.FLOAT, false, 4*6, 3*4)
+          gl.enableVertexAttribArray(a_color)
+          gl.drawArrays(gl.TRIANGLES, 0, vertexBuffer.numberOfItems)
 
         }
       }
@@ -62,7 +111,25 @@
 
       const renderer = micro(gl)
 
-      renderer()
+
+      const l_view = [
+        0.9993747472763062, -0.0039020522963255644, 0.035142675042152405, 0,
+        -0.0039020522963255644, 0.9756505489349365, 0.21929611265659332, 0,
+        -0.035142675042152405, -0.21929611265659332, 0.9750252366065979, 0,
+        0.031672216951847076, -0.001825885847210884, 0.09644750505685806, 1
+      ]
+      const l_proj = [
+        1.0331684350967407, 0, 0, 0,
+        0, 0.862457811832428, 0, 0,
+        0.2712531089782715, -0.031458716839551926, -1.0000019073486328, -1,
+        0, 0, -0.020000020042061806, 0 ]
+
+      const r_view = [ 0.9993747472763062, -0.0039020522963255644, 0.035142675042152405, 0, -0.0039020522963255644, 0.9756505489349365, 0.21929611265659332, 0, -0.035142675042152405, -0.21929611265659332, 0.9750252366065979, 0, -0.032227784395217896, -0.001825885847210884, 0.09644750505685806, 1 ]
+
+      const r_proj = [ 1.033168911933899, 0, 0, 0, 0, 0.8624579906463623, 0, 0, -0.2712526321411133, -0.031458672136068344, -1.0000019073486328, -1, 0, 0, -0.020000020042061806, 0 ]
+
+      renderer(l_view, l_proj, {x:0, y:0, w:canvas.width / 2, h:canvas.height})
+      renderer(r_view, r_proj, {x:canvas.width / 2, y:0, w:canvas.width / 2, h:canvas.height})
 
     </script>
 
