@@ -30,3 +30,13 @@ hr {
 .reveal .slides blockquote.from {
   text-align: right;
 }
+
+
+.row {
+  display: flex;
+  width: 1280px;
+}
+.row * {
+  flex:1;
+  height: auto
+}

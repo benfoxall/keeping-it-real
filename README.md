@@ -26,3 +26,4 @@ Topics include:
 * brewster stereoscope - https://commons.wikimedia.org/wiki/File:IGB_006055_Visore_stereoscopico_portatile_Museo_scienza_e_tecnologia_Milano.jpg
 * modem sounds - https://www.youtube.com/watch?v=gsNaR6FRuO0
 * great exhibition 1851 - By J. McNeven - collections.vam.ac.uk, Public Domain, https://commons.wikimedia.org/w/index.php?curid=543328
+* device lab - https://www.flickr.com/photos/adactio/12674230513
