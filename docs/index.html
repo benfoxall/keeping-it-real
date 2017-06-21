@@ -36,9 +36,13 @@
           <section data-background="images/oxford-ca.png" data-background-size="contain" > </section>
           <section data-background="images/oxford-ca-zoom.png" data-background-size="contain" > </section>
           <section data-background="images/oxford-ca-satellite.png" data-background-size="contain" > </section>
-          <section><h3>Oxford, UK <span class="fragment">(not CA)</span></h3></section>
+          <section>
+            <h3>Oxford, UK</h3>
+            <h5 class="fragment">(the one that's not some barns and fire)</h5>
+          </section>
 
           <section><h1>Some stuff that I've enjoyed doing</h1></section>
+          <section data-background="images/projects-0.jpg" data-background-size="cover" ></section>
           <section data-background="images/projects-1.jpg" data-background-size="cover" ></section>
           <section data-background="images/projects-2.jpg" data-background-size="cover" ></section>
 
@@ -56,7 +60,7 @@
             <h4>Today</h4>
             <h2>VR, The Web &amp; WebVR</h2>
             <h2>Consuming and Creating WebVR</h2>
-            <h2>Compimentary APIs &amp; Approaches</h2>
+            <h2>Complimentary APIs &amp; Approaches</h2>
             <h2>Virtual content</h2>
             <h2>Queen Victoria &amp; Nicola Pellow</h2>
           </section>
@@ -78,8 +82,8 @@
             <img class="stretch" src="images/overview-brewster.png"/>
             <!-- This was hugely successful because Victoria was so respected by the masses -->
           </section>
-          <section>
-            <h3>[picture] vs [stereoscope]</h3>
+          <section style="perspective: 500px">
+            <img src="images/picture.jpg" style="transform:rotateY(-10deg)" />
             <!--
               As well as being 3d, there's a subtly important difference.
 
@@ -89,8 +93,7 @@
             -->
             <!-- you don't have to have empathy with the photographer -->
           </section>
-          <section>
-            [graph]
+          <section data-background="images/steroscope-chart.png">
             <!-- https://books.google.com/ngrams/graph?year_start=1800&year_end=2008&corpus=15&smoothing=7&case_insensitive=on&content=stereoscopic&direct_url=t4%3B%2Cstereoscopic%3B%2Cc0%3B%2Cs0%3B%3Bstereoscopic%3B%2Cc0%3B%3BStereoscopic%3B%2Cc0%3B%3BSTEREOSCOPIC%3B%2Cc0#t4%3B%2Cstereoscopic%3B%2Cc0%3B%2Cs0%3B%3Bstereoscopic%3B%2Cc1%3B%3BStereoscopic%3B%2Cc0%3B%3BSTEREOSCOPIC%3B%2Cc0 -->
           </section>
           <section>
@@ -107,11 +110,11 @@
           </section>
           <section>
             <h3>Cardboard</h3>
-            <h3>GearVR, Daydream</h3>
-            <h3>Occulus Rift, Vive, Hololens</h3>
-            <!-- <h3>PSVR</h3> -->
-            <h3>Vive Standalone, WindowsMR</h3>
-            <!-- <h3>tango, phones?[todo]</h3> --><!-- Magic window -->
+            <h3 class="fragment">GearVR, Daydream</h3>
+            <h3 class="fragment">Occulus Rift, Vive, Hololens</h3>
+            <!-- <h3 class="fragment">PSVR</h3> -->
+            <h3 class="fragment">Vive Standalone, WindowsMR</h3>
+            <!-- <h3 class="fragment">tango, phones?[todo]</h3> --><!-- Magic window -->
           </section>
         </section>
 
@@ -149,8 +152,7 @@
           <!-- 1 - supporting a new system
           2 - wider audience -->
           <section>
-            <h1>VR?</h1>
-            <h3 class="fragment">Should browsers support VR?</h3>
+            <h2><span class="fragment">Should a web browser support</span> VR?</h2>
             <h3><span class="fragment">Yes</span><span class="fragment">.</span> <span class="fragment">Absolutely.</span></h3>
           </section>
         </section>
@@ -160,12 +162,24 @@
           <section>
             <h1>WebVR</h1>
           </section>
+
+          <section>
+            <h3>The current state:</h3>
+            <h2 class="fragment">Native app/game executables</h2>
+            <h2 class="fragment">Built with Unity, Unreal, etc</h2>
+          </section>
+
+          <section>
+            <h3>The WebVR alternative:</h3>
+            <h2 class="fragment">load VR content from a web page</h2>
+          </section>
+
           <!-- <section>
             <h2>1995 - VRML</h2>
           </section> -->
-          <section>
+          <!-- <section>
             <h2>The Extensible Web Manifesto</h2>
-          </section>
+          </section> -->
           <section>
             <h1>WebVR 1.0<span class="fragment">, 1.1</span><span class="fragment">, 2.0</span></h1>
             <!-- <h1>WebVR 1.1</h1>
@@ -175,11 +189,11 @@
           <section>
             <h2>What does WebVR let you do?</h2>
 
-            <h3>1/ Query available headsets</h3>
-            <h3>2/ Access a headset pose</h3>
-            <h3>3/ Show content on headset</h3>
+            <h3 class="fragment">1/ Query available headsets</h3>
+            <h3 class="fragment">2/ Show content on headset</h3>
+            <h3 class="fragment">3/ Access a headset pose</h3>
 
-            <h4 style="margin-top:3em">&amp; handle related challenges
+            <h4 style="margin-top:3em"  class="fragment">&amp; handle related challenges &amp; edge cases</h4>
 
           </section>
 
@@ -193,21 +207,37 @@
 
 
           <section>
-            <h1>Code</h1>
-            <pre><code data-trim data-noescape>
+            <h1>JavaScript</h1>
+            <h3><pre><code data-trim data-noescape>
               <span class="fragment">
               // get a list of attached/supported displays
               navigator.getVRDisplays()
               </span>
               <span class="fragment">
-              // access pose/position of headset
-              display.getFrameData(frameData)
-              </span>
-              <span class="fragment">
               // present canvas on device
               display.requestPresent([{source: GLCanvas}])
               </span>
-            </code></pre>
+              <span class="fragment">
+              // access pose/position of headset
+              display.getFrameData(frameData)
+              </span>
+            </code></pre></h3>
+          </section>
+
+          <section>
+            <h4>Mobile</h4>
+            <div class="fragment">
+              <h2>Chrome</h2>
+              <h2>Samsung Internet</h2>
+            </div>
+
+            <h4 style="margin-top:2em">Desktop</h4>
+            <div class="fragment">
+              <h2>Firefox*</h2>
+              <h2>Chrome*</h2>
+              <h2>IE</h2>
+            </div>
+
           </section>
 
 
@@ -252,14 +282,17 @@
           <section data-background="images/feels-desktop-active.svg" data-background-size="contain">
           </section>
 
-          <section>
+          <!-- <section>
             <h2>Device type</h2>
             <h1>GearVR (Android)</h1>
           </section>
           <section data-background="images/feel-gear-vr.svg" data-background-size="contain">
-          </section>
+          </section> -->
+
+
           <section>
-            <h2>Different ui, same code</h2>
+            <h2>Different hardware/flows</h2>
+            <h1 class="fragment">Same code</h1>
           </section>
         </section>
 
@@ -315,11 +348,11 @@
               display.requestPresent([{source: canvas}])
             </code></pre></h2>
           </section>
-          <section>
-            <h1>[daydream loading]</h1>
+          <section data-background="images/scratch-daydream_framed.png" data-background-size="contain">
           </section>
-          <section>
-            <h1>[controller pairing]</h1>
+          <section data-background="images/scratch-controllers_framed.png" data-background-size="contain">
+          </section>
+          <section data-background="images/scratch-blank_framed.png" data-background-size="contain">
           </section>
           <section>
             <h3>See if it's working</h3>
@@ -375,8 +408,15 @@
           <section>
             <h3>Run it</h3>
             <h2><pre><code data-trim data-copyable>
+              gl.clearColor(.9,.9,.9,1)
               display.requestAnimationFrame(animate)
             </code></pre></h2>
+          </section>
+
+          <section>
+            <h3>We're done <span style="font-size:.5em">(in less than 3k)</span></h3>
+            <img class="stretch" src="images/scratch-complete_framed.png" />
+            </section>
           </section>
         </section>
 
@@ -387,7 +427,7 @@
             <h4>extensive 3d library</h4>
           </section>
           <section>
-            <h1>[three]</h1>
+            <img src="images/tools-three.png" class="stretch" />
           </section>
         </section>
 

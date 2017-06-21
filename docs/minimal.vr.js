@@ -37,11 +37,7 @@ a.vertexAttribPointer(n,3,a.FLOAT,!1,24,12);a.enableVertexAttribArray(n);a.drawA
 
 
 
-
-
 renderFrameData(fd)
-
-
 
 function animate() {
   if(display.isPresenting) display.requestAnimationFrame(animate)
@@ -56,4 +52,6 @@ function animate() {
   display.submitFrame()
 }
 
+
+gl.clearColor(.9,.9,.9,1)
 display.requestAnimationFrame(animate)
