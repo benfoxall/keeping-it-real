@@ -40,3 +40,8 @@ hr {
   flex:1;
   height: auto
 }
+
+.image-stretch img{
+  max-height: 500px;
+  max-width: 1000px
+}

@@ -23,6 +23,11 @@
           <h1>Keeping it real</h1>
           <h2>with web</h2>
         </section>
+        <section data-background="#fff">
+          <h1>Virtual Reality</h1>
+          <!-- <h2>for the web</h2> -->
+          <!-- <h2>and how it fits with the web</h2> -->
+        </section>
         <section>
           <section>
             <h1>Hi, I'm Ben</h1>
@@ -58,11 +63,11 @@
           </section> -->
           <section>
             <h4>Today</h4>
-            <h2>VR, The Web &amp; WebVR</h2>
-            <h2>Consuming and Creating WebVR</h2>
-            <h2>Complimentary APIs &amp; Approaches</h2>
-            <h2>Virtual content</h2>
-            <h2>Queen Victoria &amp; Nicola Pellow</h2>
+            <h2 class="fragment">VR, The Web &amp; WebVR</h2>
+            <h2 class="fragment">Consuming and Creating WebVR</h2>
+            <h2 class="fragment">Complimentary APIs</h2>
+            <!-- <h2 class="fragment">Virtual content</h2> -->
+            <h2 class="fragment">Queen Victoria &amp; Nicola Pellow</h2>
           </section>
         </section>
 
@@ -164,8 +169,8 @@
           </section>
 
           <section>
-            <h3>The current state:</h3>
-            <h2 class="fragment">Native app/game executables</h2>
+            <h3>(most) current VR:</h3>
+            <h2 class="fragment">Native application executables</h2>
             <h2 class="fragment">Built with Unity, Unreal, etc</h2>
           </section>
 
@@ -438,35 +443,37 @@
             <h4>html-like</h4>
           </section>
           <section>
-            <h1><a target="_blank" href="https://aframe.io/aframe/examples/boilerplate/hello-world/">[a-frame]</a></h1>
+            <a class="image-stretch" class="stretch" target="_blank" href="https://aframe.io/aframe/examples/boilerplate/hello-world/"><img src="images/tools-aframe.png" /></a>
           </section>
         </section>
 
         <section>
           <section>
             <h1>#4</h1>
-            <h1>Vizor / PlayCanvas</h1>
-            <h4>graphical IDE</h4>
+            <h1>Graphical IDEs</h1>
           </section>
           <section>
-            <h1>[vizor]</h1>
+            <img src="images/tools-vizor.png" class="stretch" />
+          </section>
+          <section>
+            <img src="images/tools-playcanvas.png" class="stretch" />
           </section>
         </section>
 
         <section data-background="#fff">
-          <h1>Complimentary APIs &amp; Approaches</h2>
+          <h1>Complimentary APIs</h2>
           <!-- WebVR isn't a magical self contained thing, a lot of technologies make it better -->
         </section>
 
         <section>
-          <h2>WebVR isn't a magical box</h2>
+          <h2>WebVR is just a website</h2>
+          <img src="images/chrome-dev-tools.png" class="stretch" />
         </section>
 
-        <section>
+        <!-- <section>
           <section>
             <h3>WebVR</h3>
             <h1>+ WebGL</h1>
-            <!-- this is a bit of an obvious one -->
           </section>
           <section>
             <h1>[WebGL]</h1>
@@ -494,104 +501,121 @@
               device.requestAnimationFrame()
             </code></pre></h1>
           </section>
-        </section>
+        </section> -->
 
         <section>
           <section>
-            <h3>WebVR</h3>
-            <h1>+ Gamepad API</h1>
-          </section>
-          <section>
-            <img src="images/gamepad.png" class="stretch" />
+            <h1>VR Controllers</h3>
           </section>
           <section data-background="images/gamepad-vr.jpeg">
           </section>
           <section>
+            <img src="images/gamepad.png" class="stretch" />
+          </section>
+          <section>
+            <h1>Gamepad API</h1>
             <h1><pre><code data-trim>
               navigator.getGamepads()
+            </code></pre></h1>
+            <h1 class="fragment"><pre><code data-trim>
+              gamepad.pose
             </code></pre></h1>
           </section>
         </section>
 
         <section>
           <section>
-            <h3>WebVR</h3>
-            <h1>+ Web Audio</h1>
+            <h1>VR Audio</h1>
           </section>
           <section data-background="images/webaudio.gif">
-            <h3>Things make noise</h3>
           </section>
           <section>
-            <h3>Noises come from places</h3>
+            <h1>Spatial audio</h1>
+            <h2>Environment acoustics</h2>
+            <h2>Listener acoustics</h2>
+            <h2>Doppler effect</h2>
+            <h2>…</h2>
+
           </section>
           <section>
-            <h4><a href="http://ircam-rnd.github.io/binauralFIR/examples/" target="_blank">
-              Spatial Audio
-            </a></h4>
-            <!-- http://ircam-rnd.github.io/binauralFIR/examples/ -->
+            <h1>Web Audio</h1>
+            <h3 class="fragment"><pre><code data-trim>
+              const audioCtx = new AudioContext()
+              const panner = audioCtx.createStereoPanner()
+              const convolver = audioCtx.createConvolver()
+            </code></pre></h3>
+
+
+            <h5 class="fragment" style="margin-top:3em"><a href="http://ircam-rnd.github.io/binauralFIR/examples/" target="_blank">
+              Demo
+            </a></h5>
           </section>
         </section>
 
 
         <section>
           <section>
-            <h3>WebVR</h3>
-            <h1>+ Progressive Web Apps</h1>
+            <h1>VR Apps</h1>
           </section>
+
+
+          <!-- <section data-background-image="images/home-daydream_framed.png">
+          </section>
+          <section data-background-image="images/home-steam.jpg">
+          </section> -->
+
           <section>
             <div class="row">
               <div class="">
-                  <img src="images/home-daydream.png" alt="">
+                  <img src="images/home-daydream_framed.png" alt="">
               </div>
               <div class="">
                   <img src="images/home-steam.jpg" alt="">
               </div>
             </div>
           </section>
-          <section>
-            <h2>Add to homescreen</h2>
+          <section data-background-image="images/pwa.png" data-background-size="contain">
+            <h2>Progressive <br/>Web <br/>Apps</h2>
+            <div class="stretch"></div>
           </section>
         </section>
 
         <section>
           <section>
-            <h3>WebVR</h3>
-            <h1>+ WebRTC</h1>
+            <h1>VR Presence</h1>
+          </section>
+          <section data-background-image="images/presence.jpg">
           </section>
           <section>
-            <h3>Media Streams &amp; Data Channels</h3>
-          </section>
-          <section>
-            <h3>Copresence</h3>
+            <h1>WebRTC</h1>
+            <h3 class="fragment">Media Streams</h3>
+            <h3 class="fragment">Data Channels</h3>
           </section>
         </section>
 
-        <section>
-          <section>
-            <h3>WebVR</h3>
-            <h1>+ WebBluetooth</h1>
-          </section>
-          <section>
-            <h3></h3>
-          </section>
-          <section>
-            <h3>[todo]</h3>
-          </section>
-        </section>
 
+        <!-- <section>
+          <section>
+            <h1>VR Peripherals</h1>
+          </section>
+          <section data-background-image="images/webbluetooth.jpg">
+          </section>
+          <section>
+            <h1>Web Bluetooth</h1>
+            <img src="images/webbluetooth-select.png"/>
+          </section>
+        </section> -->
 
         <section data-background="#fff">
           <h2>Techniques / Approaches</h2>
-          <!-- What skills do we have to offer -->
         </section>
 
         <section>
           <section>
-            <h2>Feature Support</h2>
-            <h4>&raquo; WebVR</h4>
+            <h1>VR device features</h1>
           </section>
           <section>
-            <h4>3DoF, 6DoF</h4>
+            <h4>3DoF / 6DoF</h4>
             <h4>Room dimensions</h4>
             <h4>Seated/standing</h4>
             <h4>Controllers / Gaze-based</h4>
@@ -609,40 +633,38 @@
           <section data-background="images/device-lab.jpg">
             <!-- kind of like supporting mobiles -->
           </section>
-          <section>
+          <!-- <section>
             <h3>Stuff we tried</h3>
             <h1 class="fragment">mobile sites</h1>
             <h1 class="fragment">device breakpoints</h1>
-          </section>
+          </section> -->
           <section>
-            <h3>Stuff that worked</h3>
-            <h1 class="fragment">mobile first</h1>
-            <h1 class="fragment">content breakpoints</h1>
-          </section>
-          <section>
-            <h3>VR</h3>
-            <h1>Avoid device-specific support</h1>
-            <h1>Test for pain points</h1>
+            <h3 class="fragment">mobile first</h3>
+            <h3 class="fragment">progressive enhancement</h3>
+            <h3 class="fragment">content-based breakpoints</h3>
           </section>
         </section>
 
 
         <section>
           <section>
-            <h2>Performance</h2>
-            <h4>&raquo; WebVR</h4>
+            <h2>VR time to first paint</h2>
           </section>
           <section>
-            <h3>bounce rates</h3>
-            <h3>pagespeed</h3>
+            <h3>Navigation timing API</h3>
+            <h3>Metrics / guidelines</h3>
+            <h3>Tracking interaction times</h3>
           </section>
           <section>
-            <h3>todo: how we apply this to VR</h3>
+            <img src="images/vr-times.png" class="stretchx" />
+          </section>
+          <section>
+            <img src="images/vr-times-daydream.png" class="stretch" />
           </section>
         </section>
 
 
-        <section>
+        <!-- <section>
           <section>
             <h2>Accessibility</h2>
             <h4>&raquo; WebVR</h4>
@@ -653,44 +675,74 @@
           <section>
             <h3>todo: how we apply this to VR</h3>
           </section>
-        </section>
+        </section> -->
 
-        <section>
+        <!-- <section>
           <section>
             <h2>UX</h2>
             <h4>&raquo; WebVR</h4>
           </section>
           <section>
             <h3>todo: what we've learned</h3>
-            <!-- user stories -->
-            <!-- ab testing -->
           </section>
           <section>
             <h3>todo: how we apply this to VR</h3>
           </section>
-        </section>
+        </section> -->
 
         <section>
           <section>
-            <h2>Broad Access</h2>
+            <h1>VR Content</h1>
+          </section>
+          <section data-background="images/a-painter.png">
+            <h3 class="fragment">Texture Assets</h3>
+            <h3 class="fragment">Audio</h3>
+            <h3 class="fragment">Models</h3>
+            <!-- <h3 class="fragment">Levels</h3> -->
+            <h3 class="fragment">User data</h3>
+            <!-- <h3 class="fragment">…</h3> -->
+          </section>
+          <section data-background="images/steam.png">
+          </section>
+          <section>
+            <h1 class="fragment">URLs &amp; HTTP</h1>
+
+            <h3 class="fragment">https://me.example.com/model.obj</h3>
+          </section>
+          <section>
+            <h1>Bonus Features</h1>
+            <h2 class="fragment">Shared Content</h2>
+            <h2 class="fragment">Linked Experiences</h2>
+          </section>
+
+          <section>
+            <h1>HTML</h1>
+            <h3 class="fragment"><pre><code data-trim>
+            &lt;img src="https://example.com/fluent-skybox.png" /&gt;
+            </code></pre></h3>
+
+            <h3 class="fragment"><pre><code data-trim>
+            &lt;a href="https://example.com/vr.html" /&gt;
+            </code></pre></h3>
+          </section>
+
+        </section>
+
+        <!-- <section>
+          <section>
+            <h2>VR shared resources</h2>
           </section>
           <section>
             <h4>Single-serving apps</h4>
           </section>
-          <!--
-            Is there a chance of openning one native experience and transitioning to another.
-          -->
-        </section>
+        </section> -->
 
 
-        <section data-background="#fff">
+        <!-- <section data-background="#fff">
           <h1>Virtual content</h1>
         </section>
 
-
         <section>
-
-          <!-- not Johnny Mnemonic -->
         </section>
 
         <section>
@@ -706,11 +758,11 @@
           <section>
             Visualisation effectiveness
           </section>
-        </section>
+        </section> -->
 
 
         <section data-background="#fff">
-          <h1>Queen Victoria &amp; Nicola Pellow</h1>
+          <h1>Queen Victoria <br />&amp; Nicola Pellow</h1>
         </section>
 
         <section>
@@ -748,8 +800,10 @@
         </section>
 
         <section>
-          <h1>Slides online</h1>
-          <h3>&amp; Come chat</h3>
+          <h1>Slides / links / resources</h1>
+          <h3>github.com/benfoxall/keeping-it-real</h3>
+
+          <h3 style="margin-top:3em" class="fragment">&amp; Come and chat</h3>
         </section>
 
         <section>

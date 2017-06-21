@@ -27,3 +27,5 @@ Topics include:
 * modem sounds - https://www.youtube.com/watch?v=gsNaR6FRuO0
 * great exhibition 1851 - By J. McNeven - collections.vam.ac.uk, Public Domain, https://commons.wikimedia.org/w/index.php?curid=543328
 * device lab - https://www.flickr.com/photos/adactio/12674230513
+* postcard - https://commons.wikimedia.org/wiki/File:Paris_Theatre_Italien_c1840.jpg
+* presence image (also interesting study) - https://basilic.informatik.uni-hamburg.de/Publications/2017/HLS17/
